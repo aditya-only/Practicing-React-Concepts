@@ -1,10 +1,10 @@
 import React from 'react'
-import UseEffect2 from './UseEffect2.jsx'
+import UseEffect4 from './UseEffect4.jsx';
 
 
 const App = () => {
   return (
-    <UseEffect2/>
+    <UseEffect4/>
   )
 }
 
