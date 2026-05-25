@@ -7,6 +7,8 @@ const UseEffect8 = () => {
 
   useEffect(() => {
     const handleScroll = () => {
+        console.log("scrollY:", window.scrollY) // ← add this line
+
       if (window.scrollY > 300) {
         setIsVisible(true)
       } else {
@@ -41,7 +43,7 @@ const UseEffect8 = () => {
         <button
           onClick={scrollToTop}
           style={{
-            position: "fixed",
+            position: "fixed",  // stays in same place while scrolling
             bottom: "30px",
             right: "30px",
             padding: "10px 20px",

@@ -1,5 +1,5 @@
 import React from 'react'
-import UseEffect8 from './components/UseEffect8.jsx';
+import UseEffect9 from './components/UseEffect9.jsx';
 
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
 
 
   return (
-    <UseEffect8/>
+    <UseEffect9/>
   )
 }
 
