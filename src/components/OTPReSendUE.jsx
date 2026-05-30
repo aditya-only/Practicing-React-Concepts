@@ -48,7 +48,7 @@ const OTPReSendUE = () => {
 
   return (
     <section>
-      <div style={{ padding: "20px" }}>
+      <div>
         <h2>Enter OTP</h2>
         <p>OTP sent to your phone 📱</p>
 
@@ -59,25 +59,24 @@ const OTPReSendUE = () => {
             maxLength={6}
             value={userOtp}
             onChange={(e) => setUserOtp(e.target.value)}
-            style={{ padding: "8px", fontSize: "20px" }}
           />
 
           <button type="submit">Submit</button>
         </form>
 
-        <div style={{ marginTop: "20px" }}>
+        <div>
           {canResend ? (
             <button onClick={handleResend}>Resend OTP</button>
           ) : (
-            <p style={{ color: "grey" }}>
+            <p>
               Resend OTP in {timer} seconds
             </p>
-          )}
+          )} 
         </div>
 
-        <div style={{ marginTop: "20px" }}>
+        <div>
           {verification ? (
-            <p style={{ color: "green" }}>OTP Verified ✅</p>
+            <p>OTP Verified ✅</p>
           ) : (
             <p>Enter OTP</p>
           )}
