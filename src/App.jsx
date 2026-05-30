@@ -1,14 +1,11 @@
 import React from 'react'
-import UseEffect9 from './components/UseEffect9.jsx';
+import OTPReSendUE from './components/OTPReSendUE';
 
 
 const App = () => {
 
-
-
-
   return (
-    <UseEffect9/>
+    <OTPReSendUE/>
   )
 }
 
