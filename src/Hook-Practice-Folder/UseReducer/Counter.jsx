@@ -1,4 +1,3 @@
-
 import { useState, useReducer } from 'react'
 
 
@@ -9,7 +8,7 @@ function reducer(state, action){
         case "increment": return {count: state.count + 1}
         case "decrement": return {count: state.count - 1}
         default: return state
-    }
+    }   
 }
 const Counter = () => {
     

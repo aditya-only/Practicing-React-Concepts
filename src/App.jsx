@@ -1,10 +1,10 @@
 import React from 'react'
-import Counter from './Hook-Practice-Folder/UseReducer/Counter';
+import ShoppingCart from './Hook-Practice-Folder/UseReducer/CartReducer';
 
 const App = () => {
 
   return <section>
-    <Counter/>
+    <ShoppingCart/>
 
   </section>
   
