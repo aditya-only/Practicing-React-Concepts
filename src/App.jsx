@@ -1,11 +1,10 @@
 import React from 'react'
-import StopWatch from './Hook-Practice-Folder/UseRefHook/StopWatch';
-import ScrollToBottom from './Hook-Practice-Folder/UseRefHook/ScrollToBottom';
+import Counter from './Hook-Practice-Folder/UseReducer/Counter';
 
 const App = () => {
 
   return <section>
-    <ScrollToBottom/>
+    <Counter/>
 
   </section>
   
