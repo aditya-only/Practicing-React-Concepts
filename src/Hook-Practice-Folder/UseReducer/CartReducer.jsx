@@ -11,8 +11,8 @@ function reducer(state, action) {
 
         case "add":
             return {
-                ...state,                                    
-                item: [...state.item, action.payload],       
+                ...state,                                    // Bug 1 fixed
+                item: [...state.item, action.payload],       // Bug 2 fixed
                 totalPrice: state.totalPrice + action.payload.price,
             }
 
@@ -22,17 +22,14 @@ function reducer(state, action) {
             // Guard clause — if item not found, return state unchanged
             if (!removed) return state;
             
-            return {                                        
+            return {                                         // Bug 3 fixed
                 ...state,
                 item: state.item.filter(i => i.id !== action.payload.id),
                 totalPrice: state.totalPrice - removed.price,
             }
--
+
         case "clear":
-            return {
-                item: [],
-                totalPrice: 0
-            }                          
+            return initialState;                       // Bug 4 fixed
 
         default: return state
     }
@@ -48,7 +45,7 @@ const ShoppingCart = () => {
 
             <button onClick={() =>
                 dispatch({ type: "add", payload: { id: 1, name: "Shoe", price: 100 } })
-            }>                                              
+            }>                                              {/* Bug 5 fixed */}
                 Add Shoes
             </button>
 
